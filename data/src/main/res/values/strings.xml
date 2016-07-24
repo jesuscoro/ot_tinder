@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">model</string>
+
+    <string name="database_name">ot_tinder.db</string>
+    <integer name="database_version">1</integer>
+    <string name="database_package">net.opentrends.model.model</string>
+</resources>

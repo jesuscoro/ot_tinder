@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">OT Tinder</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select">¿Qué quieres conocer?</string>
+    <string name="male">Hombres</string>
+    <string name="female">Mujeres</string>
+</resources>

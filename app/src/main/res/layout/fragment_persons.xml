@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="net.opentrends.app.view.fragment.PersonsFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_persons_recyclerView_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_persons_relativeLayout_select"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="@string/select"
+                android:textSize="@dimen/text_size_large" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="11">
+
+                <Button
+                    android:id="@+id/fragment_persons_button_male"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/selector_button"
+                    android:drawablePadding="@dimen/margin_small"
+                    android:drawableTop="@drawable/generic_male"
+                    android:padding="@dimen/margin_small"
+                    android:text="@string/male" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/fragment_persons_button_female"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/selector_button"
+                    android:drawablePadding="@dimen/margin_small"
+                    android:drawableTop="@drawable/generic_female"
+                    android:padding="@dimen/margin_small"
+                    android:text="@string/female" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_persons_relativeLayout_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/translucent_black"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        applicationId "net.opentrends.app"
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    //Dominio
+    compile project(':domain')
+
+    // Modelo
+    compile project(':data')
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    sourceCompatibility = 1.7
+    targetCompatibility = 1.7
+
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.support:recyclerview-v7:24.1.1'
+
+    // Imagenes
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:support-v4:24.1.1'
+
+    // Inyeccion de dependencias
+    compile 'com.jakewharton:butterknife:8.2.1'
+    apt 'com.jakewharton:butterknife-compiler:8.2.1'
+}
