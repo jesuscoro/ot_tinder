@@ -30,7 +30,7 @@ Capa de datos de la aplicación. Contiene las llamadas a los servicios rest y la
 Utiliza las librerías:
 
 * SugarORM ([http://satyan.github.io/sugar/](http://satyan.github.io/sugar/)) Para la capa de persistencia 
-### IMPORTANTE Debido a la forma de funcionar de esta libreria, es recomendable desactivar el Instant Run de Android Studio
+<b>IMPORTANTE</b> Debido a la forma de funcionar de esta libreria, es recomendable desactivar el Instant Run de Android Studio
 * Retrofit ([http://square.github.io/retrofit/](http://square.github.io/retrofit/)) Para las llamadas REST
 * GSON ([https://github.com/google/gson](https://github.com/google/gson)) Para el tratamiento de JSON
 
